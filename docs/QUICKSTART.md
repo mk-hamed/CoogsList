@@ -23,7 +23,7 @@ Git creates the `CoogsList` folder for you, so you don't need to make one first.
 ## 3. Set up environment variables
     cp .env.example .env
 
-Ask Mohammed for the Supabase dev keys and paste them into `.env`.
+Ask a Team Lead for the Supabase dev keys and paste them into `.env`.
 Never commit this file.
 
 ## 4. Run the app
