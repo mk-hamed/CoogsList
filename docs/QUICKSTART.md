@@ -18,13 +18,16 @@ the folder where you keep your projects, and run:
 Git creates the `CoogsList` folder for you, so you don't need to make one first.
 
 ## 2. Install dependencies
+    cd web
     npm install
 
-## 3. Set up environment variables
-    cp .env.example .env
+`web` is the app's root directory and it contains `package.json`. All frontend code lives here, so we first navigate into that folder, then install the dependencies.
 
-Ask a Team Lead for the Supabase dev keys and paste them into `.env`.
-Never commit this file.
+## 3. Set up environment variables
+    cp web/.env.example web/.env.local
+
+Ask a Team Lead for the Supabase dev keys and paste them into `.env.local`.
+Never commit this file (make sure to include it in your .gitignore file).
 
 ## 4. Run the app
     npm run dev
