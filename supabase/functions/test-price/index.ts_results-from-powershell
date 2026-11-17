@@ -1,0 +1,70 @@
+index.ts results from powershell
+PS C:\Users\chris> $body = @{
+>>     product = "Logitech MX Master 3S"
+>> } | ConvertTo-Json
+PS C:\Users\chris>
+PS C:\Users\chris> Invoke-RestMethod `
+>>     -Uri "http://localhost:8000" `
+>>     -Method POST `
+>>     -ContentType "application/json" `
+>>     -Body $body |
+>>     ConvertTo-Json -Depth 10
+{
+    "search":  "Logitech MX Master 3S",
+    "timestamp":  "2026-11-17T14:54:36.966Z",
+    "provider":  "SerpApi",
+    "count":  5,
+    "products":  [
+                     {
+                         "title":  "Logitech MX Anywhere 3S Wireless mouse",
+                         "source":  "eBay - triplenetpricing",
+                         "isOnSale":  null,
+                         "originalPrice":  null,
+                         "currentPrice":  132.06,
+                         "discountPercentage":  null,
+                         "url":  "https://www.google.com/search?ibp=oshop\u0026q=Logitech MX Master 3S\u0026prds=catalogid:6059718578153169775,productid:5064451377156946823,headlineOfferDocid:4071411634909589332,imageDocid:10976416715635209579,rds:PC_9769047306723831164|PROD_PC_9769047306723831164,gpcid:13941548723844222960,pvt:hg\u0026hl=en\u0026gl=us\u0026udm=28",
+                         "currency":  "USD"
+                     },
+                     {
+                         "title":  "Logitech MX Anywhere 3S for Business Graphite Wireless Mouse",
+                         "source":  "eBay - j-select-store",
+                         "isOnSale":  null,
+                         "originalPrice":  null,
+                         "currentPrice":  159.84,
+                         "discountPercentage":  null,
+                         "url":  "https://www.google.com/search?ibp=oshop\u0026q=Logitech MX Master 3S\u0026prds=productid:12241715803198983609,headlineOfferDocid:12241715803198983609,imageDocid:4115017089648128884,rds:PC_17109883747465301699|PROD_PC_17109883747465301699,pvt:hg\u0026hl=en\u0026gl=us\u0026udm=28",
+                         "currency":  "USD"
+                     },
+                     {
+                         "title":  "Logitech Mx Mechanical Mini \u0026 Logitech Mx Master 3s For Mac Cables \u0026",
+                         "source":  "eBay",
+                         "isOnSale":  null,
+                         "originalPrice":  null,
+                         "currentPrice":  249.99,
+                         "discountPercentage":  null,
+                         "url":  "https://www.google.com/search?ibp=oshop\u0026q=Logitech MX Master 3S\u0026prds=productid:11592744884752028665,headlineOfferDocid:11592744884752028665,imageDocid:3886550336504587164,pvt:hg\u0026hl=en\u0026gl=us\u0026udm=28",
+                         "currency":  "USD"
+                     },
+                     {
+                         "title":  "Logitech MX Master 3 for Mac",
+                         "source":  "eBay",
+                         "isOnSale":  null,
+                         "originalPrice":  null,
+                         "currentPrice":  290.74,
+                         "discountPercentage":  null,
+                         "url":  "https://www.google.com/search?ibp=oshop\u0026q=Logitech MX Master 3S\u0026prds=catalogid:17683490352730361072,productid:11640608381604762187,headlineOfferDocid:4632918118682020627,imageDocid:12811200422564832046,rds:PC_2064980325747383181|PROD_PC_2064980325747383181,gpcid:853160432085978615,pvt:hg\u0026hl=en\u0026gl=us\u0026udm=28",
+                         "currency":  "USD"
+                     },
+                     {
+                         "title":  "Logitech Mx Master 3s For Mac Wireless Mouse Space Gray For Parts Left",
+                         "source":  "eBay - contrastcards",
+                         "isOnSale":  null,
+                         "originalPrice":  null,
+                         "currentPrice":  29.99,
+                         "discountPercentage":  null,
+                         "url":  "https://www.google.com/search?ibp=oshop\u0026q=Logitech MX Master 3S\u0026prds=productid:17650187598288774472,headlineOfferDocid:17650187598288774472,imageDocid:7737712643008093175,pvt:hg\u0026hl=en\u0026gl=us\u0026udm=28",
+                         "currency":  "USD"
+                     }
+                 ]
+}
+PS C:\Users\chris>
